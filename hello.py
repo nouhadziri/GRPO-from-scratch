@@ -151,6 +151,8 @@ EOS_TOKEN = tokenizer.convert_ids_to_tokens(EOS_TOKEN_ID)
 dataset = load_dataset(DATASET_NAME, split="train")
 dataset = dataset.map(preprocess_example, num_proc=6)
 
+print(dataset[0])
+
 # Split dataset
 train_test_split = dataset.train_test_split(test_size=500, seed=42)
 train_dataset = train_test_split["train"]
