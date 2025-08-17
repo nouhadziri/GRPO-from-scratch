@@ -391,4 +391,4 @@ case_2 = {
 }
 case = case_2
 episodes, stats = create_training_episodes([case["sample"]], case["generations"], case["finish_reasons"])
-episodes
+print(episodes)
