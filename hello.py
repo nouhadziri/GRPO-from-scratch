@@ -36,11 +36,11 @@ import wandb
 # )
 
 # Needed to stop DeepSpeed from complaining
-os.environ["MASTER_ADDR"] = "localhost"
-os.environ["MASTER_PORT"] = str(find_free_port())
-os.environ["RANK"] = "0"
-os.environ["LOCAL_RANK"] = "0"
-os.environ["WORLD_SIZE"] = "1"
+# os.environ["MASTER_ADDR"] = "localhost"
+# os.environ["MASTER_PORT"] = str(find_free_port())
+# os.environ["RANK"] = "0"
+# os.environ["LOCAL_RANK"] = "0"
+# os.environ["WORLD_SIZE"] = "1"
 
 
 # Let's define the hyperparameters for the training. These are mostly taken from Mini-R1 implementation.
