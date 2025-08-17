@@ -23,16 +23,17 @@ from tqdm import trange
 from transformers import AutoModelForCausalLM, AutoTokenizer, PreTrainedModel
 from vllm import LLM, SamplingParams
 
+
 import wandb
-from utils import (
-compute_token_log_probs,
-dump_episodes,
-evaluate_on_test_set,
-find_free_port,
-find_last_checkpoint,
-prepare_model_inputs,
-load_model_into_vllm
-)
+# from utils import (
+# compute_token_log_probs,
+# dump_episodes,
+# evaluate_on_test_set,
+# find_free_port,
+# find_last_checkpoint,
+# prepare_model_inputs,
+# load_model_into_vllm
+# )
 
 # Needed to stop DeepSpeed from complaining
 os.environ["MASTER_ADDR"] = "localhost"
