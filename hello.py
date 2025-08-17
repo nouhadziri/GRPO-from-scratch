@@ -159,3 +159,5 @@ test_dataset = train_test_split["test"]
 print(len(train_dataset))
 print(len(test_dataset))
 
+print("Target: ", train_dataset[0]["target"])
+print("Available Numbers: ", train_dataset[0]["nums"])
