@@ -280,3 +280,8 @@ def compute_reward(completion: str, sample: Dict[str, Any]) -> Tuple[float, Dict
 
 
 print(format_reward_func("<think>I think the answer is </think>\n<answer>1+2</answer>"))
+print(format_reward_func("I think the answer is </think>\n<answer>1+2</answer>"))
+print(format_reward_func("<think>I think the<think>and even more</think> answer is </think>\n<answer>1+2</answer>")
+)
+print(equation_reward_func("I think the answer is </think>\n<answer>1+2+2</answer>", [1,2], 3)
+)
