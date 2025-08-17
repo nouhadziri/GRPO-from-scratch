@@ -279,4 +279,4 @@ def compute_reward(completion: str, sample: Dict[str, Any]) -> Tuple[float, Dict
     return reward, metrics
 
 
-format_reward_func("<think>I think the answer is </think>\n<answer>1+2</answer>")
+print(format_reward_func("<think>I think the answer is </think>\n<answer>1+2</answer>"))
