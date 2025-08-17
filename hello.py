@@ -155,3 +155,7 @@ dataset = dataset.map(preprocess_example, num_proc=6)
 train_test_split = dataset.train_test_split(test_size=500, seed=42)
 train_dataset = train_test_split["train"]
 test_dataset = train_test_split["test"]
+
+print(len(train_dataset))
+print(len(test_dataset))
+
